@@ -280,7 +280,7 @@ def main():
             incorrect_mae = (incorrect_df['pred_ATP'] - incorrect_df['ATP']).abs().mean()
             print(f"❌ MAE (预测错误): {incorrect_mae:.4f}")
         else:
-            print("⚠️ predicted incorrectl")
+            print("⚠️ predicted incorrectly")
         if not conf_df.empty:
             conf_mae = (conf_df['pred_ATP'] - conf_df['ATP']).abs().mean()
             print(f"✅ MAE (conf > 0.5): {conf_mae:.4f}")
