@@ -82,7 +82,7 @@ def main():
     bin_list = [12,12,12,12, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     # df_list = ['pred_updated_class12_49835097.csv']
     # bin_list = [12]
-    # Read ./dara/val_mapping.json
+    # Read ./data/val_mapping.json
     with open('./data/val_mapping.json', 'r', encoding='utf-8') as f:
         val_mapping = json.load(f)
         # Replace image_2025 with processed_images in every key
